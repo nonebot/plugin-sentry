@@ -9,10 +9,9 @@ homepage = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/non
 repository = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry"
 documentation = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry#readme"
 keywords = ["nonebot", "nonebot2", "sentry"]
-packages = [{ include = "nonebot_plugin_sentry/*.py", from = ".." }]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 nonebot2 = "^2.0.0"
 sentry-sdk = { version = "^1.23.0", extras = ["loguru"] }
 
