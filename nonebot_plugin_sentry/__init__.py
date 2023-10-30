@@ -20,7 +20,7 @@ __plugin_meta__ = PluginMetadata(
     description="使用Sentry监控机器人日志并处理报错",
     usage="在配置文件中填写Sentry DSN即可启用",
     type="application",
-    homepage="https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry",
+    homepage="https://github.com/nonebot/plugin-sentry",
     config=Config,
     supported_adapters=None,
 )
