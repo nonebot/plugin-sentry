@@ -9,7 +9,7 @@ driver = get_driver()
 
 
 class Config(BaseModel):
-    sentry_dsn: Optional[str]
+    sentry_dsn: Optional[str] = None
     sentry_environment: str = driver.env
     sentry_integrations: List[Integration] = Field(default_factory=list)
 
