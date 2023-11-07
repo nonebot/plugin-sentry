@@ -1,14 +1,3 @@
-"""
-@Author         : yanyongyu
-@Date           : 2020-11-23 18:44:18
-@LastEditors    : yanyongyu
-@LastEditTime   : 2023-10-18 10:32:28
-@Description    : Config for Sentry plugin
-@GitHub         : https://github.com/yanyongyu
-"""
-
-__author__ = "yanyongyu"
-
 from typing import Any, Dict, List, Optional
 
 from nonebot import get_driver

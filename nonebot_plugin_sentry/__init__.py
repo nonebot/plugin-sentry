@@ -1,14 +1,3 @@
-"""
-@Author         : yanyongyu
-@Date           : 2020-11-23 18:44:25
-@LastEditors    : yanyongyu
-@LastEditTime   : 2023-10-18 10:32:17
-@Description    : Sentry plugin
-@GitHub         : https://github.com/yanyongyu
-"""
-
-__author__ = "yanyongyu"
-
 import sentry_sdk
 from nonebot import logger, get_driver
 from nonebot.plugin import PluginMetadata
