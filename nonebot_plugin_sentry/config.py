@@ -26,7 +26,7 @@ class Config(BaseModel):
             key: value for key, value in values.items() if key.startswith("sentry_")
         }
 
-    @validator("sentry_integrations", allow_reuse=True)
+    @validator("sentry_integrations", allow_reuse=True, always=True)
     def validate_integrations(cls, v: List[Integration]):
         ids = {i.identifier for i in v}
         if LoguruIntegration.identifier not in ids:
