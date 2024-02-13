@@ -1,6 +1,7 @@
 import sentry_sdk
-from nonebot import logger, get_driver
+from nonebot.compat import model_dump
 from nonebot.plugin import PluginMetadata
+from nonebot import logger, get_driver, get_plugin_config
 
 from .config import Config
 
@@ -15,12 +16,11 @@ __plugin_meta__ = PluginMetadata(
 )
 
 driver = get_driver()
-global_config = driver.config
-config = Config(**global_config.dict())
+config = get_plugin_config(Config)
 
 
 def init_sentry(config: Config):
-    sentry_config = {key[7:]: value for key, value in config.dict().items()}
+    sentry_config = {key[7:]: value for key, value in model_dump(config).items()}
     sentry_sdk.init(**sentry_config)
 
 
