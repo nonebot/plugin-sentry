@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "nonebot-plugin-sentry"
-version = "1.1.0"
+version = "2.0.0"
 description = "Push your bot errors to Sentry.io"
 license = "MIT"
 authors = ["yanyongyu <yyy@nonebot.dev>"]
 readme = "README.md"
-homepage = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry"
-repository = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry"
-documentation = "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_sentry#readme"
+homepage = "https://github.com/nonebot/plugin-sentry"
+repository = "https://github.com/nonebot/plugin-sentry"
+documentation = "https://github.com/nonebot/plugin-sentry#readme"
 keywords = ["nonebot", "nonebot2", "sentry"]
 
 [tool.poetry.dependencies]
